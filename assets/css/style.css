@@ -1,0 +1,63 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: none;
+    background-image: url(../imgs/Background.png);
+    margin-bottom: 60px;
+}
+
+.thumbnail {
+    border: none;
+}
+
+.navbar-default {
+    background-color: rgb(115, 185, 118);
+    border-color: rgb(115, 185, 118)
+}
+
+.navbar-header .navbar-text {
+    color: black;
+    background-color: white;
+    border-color: white;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    height: 52px;
+    width: 200px;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 7px;
+    
+}
+
+.navbar-default .navbar-right li a {
+    color: black;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: rgb(115, 185, 118);
+  }
+
+.footer .container p {
+    text-align: center; 
+    padding-top: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-default .navbar-right li a {
+        text-align: center;
+        color: black;
+        float: left;
+        width: 33.3%
+    }
+}
+
+
