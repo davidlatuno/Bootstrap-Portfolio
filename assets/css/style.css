@@ -36,6 +36,9 @@ body {
     color: black;
 }
 
+.navbar-default .navbar-right li a:hover {
+    background-color: rgb(68, 160, 68);
+}
 
 .footer {
     position: absolute;
