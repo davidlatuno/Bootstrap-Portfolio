@@ -54,12 +54,34 @@ body {
     padding-top: 18px;
 }
 
+a {
+    text-align: center;
+}
+ 
+a:hover {
+    text-decoration: none;
+}
+
+.caption-portfolio {
+    background: rgb(115, 185, 118);
+}
+
+.caption p {
+    padding-top: 5px;
+}
+
 @media screen and (max-width: 768px) {
     .navbar-default .navbar-right li a {
         text-align: center;
         color: black;
         float: left;
         width: 33.3%
+    }
+
+    .col-sm-3 {
+        margin-left: 20%;
+        margin-right: 20%;
+        
     }
 }
 
