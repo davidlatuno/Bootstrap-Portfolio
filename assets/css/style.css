@@ -21,14 +21,14 @@ body {
 }
 
 .navbar-default {
-    background-color: rgb(115, 185, 118);
-    border-color: rgb(115, 185, 118)
+    background-color: #f5f5f5;
+    border-color: #ddd;
 }
 
 .navbar-header .navbar-text {
-    color: black;
-    background-color: white;
-    border-color: white;
+    color: white;
+    background-color: rgb(115, 185, 118);
+    border-color: rgb(115, 185, 118);
     margin-top: -1px;
     margin-bottom: -1px;
     height: 52px;
@@ -36,15 +36,24 @@ body {
     font-size: 25px;
     padding-left: 25px;
     padding-top: 7px;
-    
+}
+
+.navbar-default .navbar-right li {
+    height: 30px;
+    margin-top: 10px;
 }
 
 .navbar-default .navbar-right li a {
     color: black;
+    padding-top: 5px;
 }
 
-.navbar-default .navbar-right li a:hover {
-    background-color: rgb(68, 160, 68);
+.navbar-default .navbar-right li:hover {
+    background-color: lightgrey;
+}
+
+.navbar-default .navbar-right li:first-child, .navbar-default .navbar-right li:nth-child(2) {
+    border-right: 1px solid #777777;
 }
 
 .footer {
@@ -53,7 +62,7 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    color: black;
+    color: white;
     background-color: rgb(104, 134, 161);
     border-top: 5px solid rgb(115, 185, 118);
   }
@@ -61,6 +70,8 @@ body {
 .footer .container p {
     text-align: center; 
     padding-top: 12px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 15px;
 }
 
 a {
@@ -79,14 +90,21 @@ a:hover {
     padding-top: 5px;
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-default .navbar-right li a {
-        text-align: center;
-        color: black;
-        float: left;
-        width: 33.3%
-    }
+.panel-heading .panel-title {
+    text-align: center;
+}
 
+@media screen and (max-width: 767px) {
+    .navbar-default .navbar-right li {
+        width: 33%;
+        float: left;
+        margin-top: 0px;
+    }
+    
+    .navbar-default .navbar-right li a {
+        color: black;
+        padding-top: 5px;
+    }
     .col-sm-3 {
         margin-left: 20%;
         margin-right: 20%;
