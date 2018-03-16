@@ -113,4 +113,12 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 400px) {
+
+    .navbar-default .navbar-right li a {
+        font-size: 13px;
+    }
+
+}
+
 
